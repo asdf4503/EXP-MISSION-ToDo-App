@@ -30,4 +30,4 @@ JavaScript를 이용하여 Todo App 만들기 실습.
 - JavaScript의 경우 기존에 다루기는 해보았지만 혼자서 능숙하게 다루지는 못해서 걱정이 많았습니다. 해당 프로젝트는 강의를 보며 참고해서 만든 프로젝트라서 웹 페이지에 동작하는 것을 중심으로 공부하며 진행하였습니다. 이를 통해 JavaScript의 구문과 형식에 대해 정리된 것 같고 아직은 많이 어렵지만 웹에서 많이 사용하고 react는 JavaScript의 라이브러리로 알고 있는 만큼 앞으로 더 열심히 공부해야겠다고 느꼈습니다. 또한 웹 페이지의 데이터를 관리할 떄 MySQL, Oracle 등의 DB를 사용했었는데 로컬 스토리지라는 것을 이번 프로젝트를 통해 새롭게 알게 되어 아직 모르는 부분들이 많다고 생각들었습니다.
 
 4. 시연 영상
-https://github.com/user-attachments/assets/bb9716d7-5edd-4691-82a9-e0445751e7e9
+- https://github.com/user-attachments/assets/bb9716d7-5edd-4691-82a9-e0445751e7e9
