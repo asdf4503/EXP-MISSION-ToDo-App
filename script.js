@@ -6,6 +6,7 @@ let todos = [];
 createBtn.addEventListener('click', createNewTodo);
 
 function createNewTodo() {
+    //item의 데이터
     const item = {
         id: new Date().getTime(), 
         text: '', 
@@ -14,6 +15,7 @@ function createNewTodo() {
 
     todos.unshift(item);
 
+    //요소 생성
     const {itemEl, inputEl, editBtnEl, removeBtnEl} = createTodoElement(item);
 
     //앞으로 itemEl 추가 (새로 생성된 일정)
@@ -25,6 +27,7 @@ function createNewTodo() {
     saveToLocalStorage();
 }
 
+//요소 생성
 function createTodoElement(item) {
     const itemEl = document.createElement('div');
     itemEl.classList.add('item');
@@ -53,6 +56,7 @@ function createTodoElement(item) {
     removeBtnEl.classList.add('material-icons', 'remove-btn');
     removeBtnEl.innerText = 'remove_circles';
 
+    //체크박스 활성화
     checkboxEl.addEventListener ('change', () => {
         item.complete = checkboxEl.checked;
 
@@ -73,11 +77,13 @@ function createTodoElement(item) {
         item.text = inputEl.value;
     })
 
+    //할 일 편집
     editBtnEl.addEventListener('click', () => {
         inputEl.removeAttribute ('disabled');
         inputEl.focus();
     })
 
+    //할 일 제거
     removeBtnEl.addEventListener('click', () => {
         todos = todos.filter(t => t.id !== item.id)
         itemEl.remove();
@@ -112,6 +118,7 @@ function loadFromLocalStorage() {
     }
 }
 
+//새로고침 후 화면에 요소 불러오기
 function displayTodos() {
     loadFromLocalStorage();
 
